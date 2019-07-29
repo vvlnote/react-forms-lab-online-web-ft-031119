@@ -11,6 +11,7 @@ class TwitterMessage extends React.Component {
   }
 
   handleMessageChange = (e) => {
+    e.persist();
     this.setState({
       message: e.target.value
     })
